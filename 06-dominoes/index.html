@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="author" content="Anonymous">
+  <meta name="description" content=" A graphic library for javascript called p5.js">
+  <meta name="keywords" content="Obfuscation,Code,HTML,CSS,JavaScript">
+  <title>I am a p5.js sketch</title>
+</head>
+
+<!--CND to p5.js library and Matter.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.js"></script>
+<!--Your P5.js skcetch obfuscated-->
+<script id="obfuscated-sketch">
+var _0x464e=['vertices','pDDmJ','mbRcl','update','stack','add','bodies','length','Oejrs','faSQL','zZcrk','Engine','Render','World','Bodies','5|4|0|1|2|3|6|7','split','circle','rectangle','create','emguX','6|7|5|1|3|0|4|2','ICrtX','SYqby','kHZDQ','AOqHo'];(function(_0x569ed5,_0x44bc69){var _0x4a1c59=function(_0x4a96e8){while(--_0x4a96e8){_0x569ed5['push'](_0x569ed5['shift']());}};_0x4a1c59(++_0x44bc69);}(_0x464e,0x1c5));var _0x588f=function(_0x2f36ce,_0x704905){_0x2f36ce=_0x2f36ce-0x0;var _0x102978=_0x464e[_0x2f36ce];return _0x102978;};var Engine=Matter[_0x588f('0x0')];var Render=Matter[_0x588f('0x1')];var World=Matter[_0x588f('0x2')];var Bodies=Matter[_0x588f('0x3')];var Composites=Matter['Composites'];var engine;var ball;var ground;var stack;function setup(){var _0x14081f={'hrAFG':function(_0x319ef1,_0x4f5852){return _0x319ef1*_0x4f5852;},'ZXxnu':function(_0x3049e1,_0x3b7b61){return _0x3049e1/_0x3b7b61;},'Ybobw':function(_0xc5fa8a,_0xf4d744,_0x461aa5){return _0xc5fa8a(_0xf4d744,_0x461aa5);},'emguX':function(_0x14f8a5){return _0x14f8a5();}};var _0x3f3e70=_0x588f('0x4')[_0x588f('0x5')]('|'),_0x18d97f=0x0;while(!![]){switch(_0x3f3e70[_0x18d97f++]){case'0':ball=Bodies[_0x588f('0x6')](0x1e,0x0,0x14,{'restitution':0x1,'friction':0x0,'density':0.003});continue;case'1':var _0x58d8c4={'isStatic':!![],'angle':_0x14081f['hrAFG'](Math['PI'],0x0)};continue;case'2':ground=Bodies[_0x588f('0x7')](_0x14081f['ZXxnu'](width,0x2),0x1f4,width,0xa,_0x58d8c4);continue;case'3':smallGround=Bodies['rectangle'](0x32,0x1d6,0x64,0xa,{'isStatic':!![],'angle':Math['PI']*0.2});continue;case'4':engine=Engine[_0x588f('0x8')]();continue;case'5':_0x14081f['Ybobw'](createCanvas,0x4b0,0x258);continue;case'6':World['add'](engine['world'],[ground,ball,smallGround]);continue;case'7':_0x14081f[_0x588f('0x9')](setupDominoes);continue;}break;}}function draw(){var _0x45b949={'ICrtX':_0x588f('0xa'),'SYqby':function(_0x52a132,_0x3aa71c){return _0x52a132(_0x3aa71c);},'kHZDQ':function(_0x322efd,_0x3aa8a1){return _0x322efd(_0x3aa8a1);},'AOqHo':function(_0x40484a,_0xd5c3a9){return _0x40484a(_0xd5c3a9);},'pDDmJ':function(_0x179891,_0x270fdd){return _0x179891(_0x270fdd);},'mbRcl':function(_0x3b9084,_0x401510){return _0x3b9084(_0x401510);}};var _0xf9565b=_0x45b949[_0x588f('0xb')][_0x588f('0x5')]('|'),_0x2a011c=0x0;while(!![]){switch(_0xf9565b[_0x2a011c++]){case'0':_0x45b949[_0x588f('0xc')](fill,0x80);continue;case'1':_0x45b949[_0x588f('0xd')](drawVertices,ball['vertices']);continue;case'2':_0x45b949[_0x588f('0xe')](drawVertices,smallGround[_0x588f('0xf')]);continue;case'3':drawDominoes();continue;case'4':_0x45b949[_0x588f('0xe')](drawVertices,ground[_0x588f('0xf')]);continue;case'5':_0x45b949[_0x588f('0x10')](fill,0xff);continue;case'6':_0x45b949[_0x588f('0x11')](background,0x0);continue;case'7':Engine[_0x588f('0x12')](engine);continue;}break;}}function setupDominoes(){let _0x6f2b41=0x64;let _0x2aa19e=0x12c;stack=Composites[_0x588f('0x13')](_0x6f2b41,_0x2aa19e,0x23,0x1,0x14,0x0,function(_0x4e6410,_0x3952a7){return Bodies['rectangle'](_0x4e6410,_0x3952a7,0xc8,0xa,{'angle':Math['PI']*0.5});});World[_0x588f('0x14')](engine['world'],stack[_0x588f('0x15')]);}function drawDominoes(){var _0x4c7e6e={'JyxJT':function(_0x1e7130,_0x7480c1){return _0x1e7130<_0x7480c1;}};for(i=0x0;_0x4c7e6e['JyxJT'](i,stack[_0x588f('0x15')][_0x588f('0x16')]);i++){drawVertices(stack['bodies'][i][_0x588f('0xf')]);}}function drawVertices(_0x5785cf){var _0x431ae8={'Oejrs':function(_0x4df382){return _0x4df382();},'faSQL':function(_0x5ac66f,_0x1292d6){return _0x5ac66f<_0x1292d6;},'zZcrk':function(_0x1b0821,_0x24db9d,_0x5127d0){return _0x1b0821(_0x24db9d,_0x5127d0);}};_0x431ae8[_0x588f('0x17')](beginShape);for(var _0x69f1fc=0x0;_0x431ae8[_0x588f('0x18')](_0x69f1fc,_0x5785cf[_0x588f('0x16')]);_0x69f1fc++){_0x431ae8[_0x588f('0x19')](vertex,_0x5785cf[_0x69f1fc]['x'],_0x5785cf[_0x69f1fc]['y']);}endShape(CLOSE);}
+
+
+</script>
+
+</body>
+
+</html>
